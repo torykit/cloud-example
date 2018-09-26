@@ -2,7 +2,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8888/eureka/
-
+    registry-fetch-interval-seconds: 5
+  instance:
+    prefer-ip-address: true
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
 
 management:
   endpoint:
@@ -15,7 +19,9 @@ management:
 
 
 spring:
-  application:
-    name: server-a
-server:
-  port: 8001
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      fail-fast: true

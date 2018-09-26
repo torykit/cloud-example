@@ -17,8 +17,28 @@ management:
       exposure:
         include: '*'
 
+
 spring:
   application:
-    name: springboot-admin
+    name: config
+  cloud:
+    bus:
+      trace:
+        enabled: true
+    config:
+      server:
+        git:
+          uri: https://gitee.com/torykits/test-config.git
+          username: dynamicoct@qq.com
+          password: Zz3102261992
+          default-label: master
+          search-paths: ${spring.profiles.active}
+
+
+  profiles:
+    active: dev
+
+
+
 server:
-  port: 9000
+  port: 9100
