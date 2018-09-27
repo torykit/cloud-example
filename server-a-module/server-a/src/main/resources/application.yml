@@ -1,5 +1,0 @@
-spring:
-  application:
-    name: server-a
-server:
-  port: 8001

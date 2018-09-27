@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: server-b
+server:
+  port: 8002

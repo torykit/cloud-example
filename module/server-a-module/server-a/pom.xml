@@ -3,27 +3,30 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springboot-admin</artifactId>
-    <packaging>jar</packaging>
+    <name>server-a</name>
+    <artifactId>server-a</artifactId>
+
 
     <parent>
         <groupId>com.example.cloud</groupId>
-        <artifactId>parent</artifactId>
+        <artifactId>server-a-module</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
+
 
     <dependencies>
         <dependency>
-            <groupId>de.codecentric</groupId>
-            <artifactId>spring-boot-admin-starter-server</artifactId>
+            <groupId>com.example.cloud</groupId>
+            <artifactId>server-a-api</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>com.example.cloud</groupId>
+            <artifactId>server-b-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
 
 
 </project>

@@ -19,8 +19,8 @@ management:
 
 
 spring:
-  application:
-    name: config
+  profiles:
+    active: dev
   cloud:
     bus:
       trace:
@@ -35,10 +35,3 @@ spring:
           search-paths: ${spring.profiles.active}
 
 
-  profiles:
-    active: dev
-
-
-
-server:
-  port: 9100

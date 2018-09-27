@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config
+  rabbitmq:
+    host: 10.37.32.251
+    port: 5672
+    username: guest
+    password: guest
+
+server:
+  port: 9100
+
+
