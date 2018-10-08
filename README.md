@@ -21,3 +21,4 @@ gateway|×|
 zookeeper|×|
 data flow|×|
 统一异常处理|×|
+分布式全局锁|×|

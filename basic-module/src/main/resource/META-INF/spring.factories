@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.example.cloud.basic.module.config.FeignClientBasicAutoConfig,\
+  com.example.cloud.basic.module.config.Swagger2Config

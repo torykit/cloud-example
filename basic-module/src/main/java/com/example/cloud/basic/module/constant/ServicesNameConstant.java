@@ -1,6 +1,7 @@
 package com.example.cloud.basic.module.constant;
 
 /**
+ * 服务模块名称
  * @author zhen.zhao01
  * @date 2018/9/27
  */
@@ -12,5 +13,7 @@ public class ServicesNameConstant {
     public static final String SERVER_A = PREFIX + "server-a";
 
     public static final String SERVER_B = PREFIX + "server-b";
+
+    public static final String SERVER_C = PREFIX + "server-c";
 
 }

@@ -1,0 +1,17 @@
+server:
+  port: 9200
+
+
+
+
+
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+      - id: servera
+        uri: lb://server-a
+        predicates:
+        - Path=/server/a/**

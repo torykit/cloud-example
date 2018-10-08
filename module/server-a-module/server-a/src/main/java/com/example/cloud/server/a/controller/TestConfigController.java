@@ -1,7 +1,8 @@
 package com.example.cloud.server.a.controller;
 
-import com.example.cloud.server.a.api.TestConfigApi;
-import com.example.cloud.server.b.api.TestServerBApi;
+import com.example.cloud.server.a.api.impl.TestConfigApi;
+import com.example.cloud.server.b.api.impl.TestServerBApi;
+import com.example.cloud.server.c.api.impl.TestServerCApi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,9 @@ public class TestConfigController implements TestConfigApi {
     @Autowired
     private TestServerBApi testServerBApi;
 
+    @Autowired
+    private TestServerCApi testServerCApi;
+
     @Value("${branch}")
     private String branch;
 
@@ -44,6 +48,12 @@ public class TestConfigController implements TestConfigApi {
     @GetMapping("accessServerB")
     public String accessServerB() {
         return testServerBApi.info();
+    }
+
+
+    @GetMapping("accessServerC")
+    public String accessServerC() {
+        return testServerCApi.info();
     }
 
 
