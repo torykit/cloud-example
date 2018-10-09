@@ -18,8 +18,3 @@ logging:
           servlet:
             DispatcherServlet: debug
 
-
-feign:
-  package:
-  - com.example.cloud.server.b.api.impl
-  - com.example.cloud.server.b.api.impl2

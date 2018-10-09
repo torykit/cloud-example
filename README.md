@@ -2,7 +2,7 @@
 
 功能|是否添加|备注
 -|-|-
-eureka|√|http://localhost:8888
+eureka|√|http://eureka.server.com:8888
 config|√|http://localhost:9100
 bus|√|配合config自动reload bean(/actuator/bus-refresh)
 springboot-admin|√|http://localhost:9000
@@ -17,7 +17,7 @@ oauth2|×|
 jwt|×|
 TCC|×|
 ELK|×|
-gateway|×|
+gateway|√|
 zookeeper|×|
 data flow|×|
 统一异常处理|×|

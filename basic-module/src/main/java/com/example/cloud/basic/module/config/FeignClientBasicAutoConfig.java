@@ -20,9 +20,9 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
  * @author zhen.zhao01
  * @date 2018/10/8
  */
-@Configuration
-@ConditionalOnClass({Feign.class})
-@EnableFeignClients(basePackages = {BasicConstant.FEIGN_MODULE_SCAN_PACKAGE})
+//@Configuration
+//@ConditionalOnClass({Feign.class})
+//@EnableFeignClients(basePackages = {BasicConstant.FEIGN_MODULE_SCAN_PACKAGE})
 public class FeignClientBasicAutoConfig extends WebMvcAutoConfiguration.EnableWebMvcConfiguration {
 
 
@@ -41,14 +41,4 @@ public class FeignClientBasicAutoConfig extends WebMvcAutoConfiguration.EnableWe
         };
     }
 
-    @Override
-    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
-        super.addResourceHandlers(registry);
-
-        registry.addResourceHandler("swagger-ui.html")
-                .addResourceLocations("classpath:/META-INF/resources/");
-
-        registry.addResourceHandler("/webjars/**")
-                .addResourceLocations("classpath:/META-INF/resources/webjars/");
-    }
 }

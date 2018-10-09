@@ -19,21 +19,7 @@
         <module>server-a</module>
     </modules>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.example.cloud</groupId>
-                <artifactId>server-a-api</artifactId>
-                <version>${project.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>*</artifactId>
-                        <groupId>*</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+
 
 
     <build>

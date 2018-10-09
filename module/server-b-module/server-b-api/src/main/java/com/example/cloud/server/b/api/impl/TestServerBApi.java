@@ -17,6 +17,7 @@ public interface TestServerBApi {
      * test
      * @return
      */
+
     @GetMapping("info")
     String info();
 
