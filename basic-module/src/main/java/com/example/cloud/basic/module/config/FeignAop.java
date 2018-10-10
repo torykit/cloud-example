@@ -23,7 +23,7 @@ import java.util.Map;
  * @author zhen.zhao01
  * @date 2018/10/9
  */
-
+@Deprecated
 @Configuration
 public class FeignAop implements SmartApplicationListener {
 

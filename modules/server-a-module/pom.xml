@@ -9,7 +9,7 @@
 
     <parent>
         <groupId>com.example.cloud</groupId>
-        <artifactId>module</artifactId>
+        <artifactId>modules</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -19,22 +19,5 @@
         <module>server-a</module>
     </modules>
 
-
-
-
-    <build>
-        <finalName>${project.artifactId}-${project.version}</finalName>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>com.example.cloud.server.a.ServeraApplication</mainClass>
-                    <layout>ZIP</layout>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

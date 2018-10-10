@@ -1,5 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.example.cloud.basic.module.config.Swagger2Config,\
-  com.example.cloud.basic.module.config.FeignAutoConfig
-org.springframework.context.ApplicationListener = \
-  com.example.cloud.basic.module.config.FeignAop
+  com.example.cloud.basic.module.config.Swagger2Config

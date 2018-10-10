@@ -9,7 +9,7 @@
 
     <parent>
         <groupId>com.example.cloud</groupId>
-        <artifactId>module</artifactId>
+        <artifactId>modules</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -20,19 +20,4 @@
         <module>server-c</module>
     </modules>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.example.cloud</groupId>
-                <artifactId>server-c-api</artifactId>
-                <version>${project.version}</version>
-                <exclusions>
-                    <exclusion>
-                        <artifactId>*</artifactId>
-                        <groupId>*</groupId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
 </project>
