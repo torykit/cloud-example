@@ -5,14 +5,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.client.RestTemplate;
 
 /**
  * @author zhen.zhao01
  * @CreateDate 2018/9/26
  */
-@EnableFeignClients(basePackages = {ApiConstant.SERVER_B, ApiConstant.SERVER_C})
+@EnableScheduling
 @SpringBootApplication
+@EnableFeignClients(basePackages = {ApiConstant.SERVER_B, ApiConstant.SERVER_C})
 public class ServeraApplication {
 
     public static void main(String[] args) {

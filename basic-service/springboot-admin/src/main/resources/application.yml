@@ -1,22 +1,21 @@
 spring:
   application:
     name: springboot-admin
+
 server:
   port: 9000
 
 
 swagger2:
-  suffix: /v2/api-docs
+  version: 1.0
   resources:
-  - name: GateWay (网关)
-    location: ${swagger2.suffix}
-    version: v3
   - name: SERVER_A (模块A)
-    location: /server/a
-    version: 1.0
+    location: /server-a
   - name: SERVER_B (模块B)
-    location: /server/a
-    version: 1.0
+    location: /server-b
   - name: SERVER_C (模块C)
-    location: /server/a
-    version: 1.0
+    location: /server-c
+
+info:
+  desc: 集成了 SpringBootAdmin 和 Swagger2 ui
+  swagger2-ui: http://localhost:9000/swagger-ui.html

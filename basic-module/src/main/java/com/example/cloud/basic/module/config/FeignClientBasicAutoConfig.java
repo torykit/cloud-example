@@ -1,18 +1,12 @@
 package com.example.cloud.basic.module.config;
 
-import com.example.cloud.basic.module.constant.BasicConstant;
-import feign.Feign;
 import org.springframework.beans.factory.ListableBeanFactory;
 import org.springframework.beans.factory.ObjectProvider;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcRegistrations;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.AnnotatedElementUtils;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 
 /**
@@ -23,6 +17,7 @@ import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandl
 //@Configuration
 //@ConditionalOnClass({Feign.class})
 //@EnableFeignClients(basePackages = {BasicConstant.FEIGN_MODULE_SCAN_PACKAGE})
+@Deprecated
 public class FeignClientBasicAutoConfig extends WebMvcAutoConfiguration.EnableWebMvcConfiguration {
 
 

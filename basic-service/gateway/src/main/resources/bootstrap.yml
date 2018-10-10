@@ -17,3 +17,10 @@ management:
       exposure:
         include: '*'
 
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config
+      fail-fast: true

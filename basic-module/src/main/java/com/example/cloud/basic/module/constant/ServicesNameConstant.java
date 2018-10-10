@@ -16,4 +16,7 @@ public class ServicesNameConstant {
 
     public static final String SERVER_C = PREFIX + "server-c";
 
+    public static final String GATEWAY = PREFIX + "gateway";
+
+
 }
