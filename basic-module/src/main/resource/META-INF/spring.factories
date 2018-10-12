@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.example.cloud.basic.module.config.Swagger2Config
+  com.trinasolar.cloud.core.config.Swagger2Config
